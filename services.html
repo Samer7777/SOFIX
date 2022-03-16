@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--===========================Start All CSS======================================-->
+
+    <!--START FONT ICONS-->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!-- END FONT ICONS -->
+
+    <!--START BOOTSTRAP V.4-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- END BOOTSTRAP V.4 -->
+
+    <!-- START fancy box -->
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css" />
+    <!-- END fancy box   -->
+
+    <!-- START LIGHT SLIDER -->
+    <link rel="stylesheet" href="./assets/css/lightslider.css" />
+    <!-- END LIGHT SLIDER   -->
+
+    <!--START MAIN CSS-->
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <!-- END MAIN CSS -->
+    <!--===========================End All CSS  ======================================-->
+    <title>Services</title>
+  </head>
+  <body>
+    <!--================= START HEADER ======================-->
+    <header class="header" id="header">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/logo.png" class="logo" alt="logo" />
+            </a>
+            <ul class="navbar-nav mx-auto" id="menuList">
+              <li class="nav-item">
+                <img
+                  src="./assets/images/logo.png"
+                  class="mobile_image"
+                  alt="logo"
+                />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Exhibit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sponsrs.html">Sponsor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./mesoc.html">MESOC 2022</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./media-partner.html">Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href=""
+                  id="navbarDropdown1"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="./events.html">Events 1</a>
+                  <a class="dropdown-item" href="./events.html">Events 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./team.html">Meet the Team</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Quick Links
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <div class="headerLogos">
+              <img src="./assets/images/logo3.png" class="logo" alt="logo2" />
+              <img src="./assets/images/logo2.png" class="logo" alt="logo3" />
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="box">
+        <div class="btn not-active" id="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!--=================  END HEADER  ======================-->
+
+    <!--=================  START HERO  ======================-->
+    <section class="hero inner_page" id="here">
+      <div class="overlay"></div>
+      <video muted loop id="myVideo">
+        <source src="./assets/images/homeVedio.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="container-fluid z-2">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <div class="hero_text">
+              <h1>SERVICES</h1>
+            </div>
+            <!--not working here-->
+            <div class="cont_down">
+              <ul>
+                <li>
+                  <span id="days" class="number"></span
+                  ><span class="text_count">DAYS</span>
+                </li>
+                <li>
+                  <span id="hours" class="number"></span
+                  ><span class="text_count">HOURS</span>
+                </li>
+                <li>
+                  <span id="minutes" class="number"></span
+                  ><span class="text_count">MINUTES</span>
+                </li>
+                <li>
+                  <span id="seconds" class="number"></span
+                  ><span class="text_count">SECONDS</span>
+                </li>
+              </ul>
+              <h3>31 October - 3 November</h3>
+            </div>
+          </div>
+          <div class="hero_footer">
+            <button id="vedioPlay" class="btn playVedio" onclick="myFunction()">
+              <i class="fas fa-regular fa-play"></i>
+            </button>
+          </div>
+        </div>
+        <div class="social_icon">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--=================  END HERO    ======================-->
+
+    <!--=================   START HOTELS        =====================-->
+    <section class="hotels">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="heading text-center">
+              <img
+                src="./assets/images/hotel-head.png"
+                class="img-fluid"
+                alt="logo"
+              />
+              <h2>Official Hotels</h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="hotels_item_container">
+              <a href="#" class="hotel_item mb-3">
+                <div class="overlay"></div>
+                <img
+                  src="./assets/images/hotel1.png"
+                  class="img-fluid hotel_image"
+                  alt="image"
+                />
+                <div class="inside_item z-2">
+                  <img
+                    src="./assets/images/hotel-white.png"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                  <h3>The Hotel Name</h3>
+                </div>
+              </a>
+              <a href="#" class="hotel_item mb-3">
+                <div class="overlay"></div>
+                <img
+                  src="./assets/images/hotel3.png"
+                  class="img-fluid hotel_image"
+                  alt="image"
+                />
+                <div class="inside_item z-2">
+                  <img
+                    src="./assets/images/hotel-white.png"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                  <h3>The Hotel Name</h3>
+                </div>
+              </a>
+              <a href="#" class="hotel_item mb-3">
+                <div class="overlay"></div>
+                <img
+                  src="./assets/images/hotel4.png"
+                  class="img-fluid hotel_image"
+                  alt="image"
+                />
+                <div class="inside_item z-2">
+                  <img
+                    src="./assets/images/hotel-white.png"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                  <h3>The Hotel Name</h3>
+                </div>
+              </a>
+              <a href="#" class="hotel_item mb-3">
+                <div class="overlay"></div>
+                <img
+                  src="./assets/images/hotel1.png"
+                  class="img-fluid hotel_image"
+                  alt="image"
+                />
+                <div class="inside_item z-2">
+                  <img
+                    src="./assets/images/hotel-white.png"
+                    class="img-fluid"
+                    alt="logo"
+                  />
+                  <h3>The Hotel Name</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================   START HOTELS        =====================-->
+
+    <!--=================   START Transportation        =====================-->
+    <section class="transportation">
+      <div class="overlay"></div>
+      <div class="container-fluid z-2">
+        <div class="row">
+          <div class="col-12">
+            <div class="heading text-center">
+              <h2>Transportation</h2>
+              <p>
+                The SOFEX conference and exhibition are a great occasion to
+                spark motivation and inspire Heads of State, Defence Ministers,
+                Chiefs of Armed Forces, Air and Navy Forces, Special Operations
+                Commanders, Counter Terrorism and Homeland Security decision
+                makers and experts, including officials from various security
+                agencies to expand capacity in order to address current and
+                future challenges, place strategies in a global context and
+                position forces for high performance.
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="transportation_list">
+              <li>
+                <img
+                  src="./assets/images/plan.png"
+                  class="img-fluid"
+                  alt="logo"
+                />
+                <h6>Transport</h6>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/bus.png"
+                  class="img-fluid"
+                  alt="logo"
+                />
+                <h6>Transport</h6>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/boat.png"
+                  class="img-fluid"
+                  alt="logo"
+                />
+                <h6>Transport</h6>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/train.png"
+                  class="img-fluid"
+                  alt="logo"
+                />
+                <h6>Transport</h6>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/car.png"
+                  class="img-fluid"
+                  alt="logo"
+                />
+                <h6>Transport</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================   START Transportation        =====================-->
+
+    <!--=================   START Central Reservation         =====================-->
+    <section class="central_reservation">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <div class="central_reservation_text">
+              <h2>Central Reservation</h2>
+              <p>
+                The SOFEX conference and exhibition are a great occasion to
+                spark motivation and inspire Heads of State, Defence Ministers,
+                Chiefs of Armed Forces, Air and Navy Forces, Special Operations
+                Commanders, Counter Terrorism and Homeland Security decision
+                makers and experts, including officials from various security
+                agencies to expand capacity in order to address current and
+                future challenges, place strategies in a global context and
+                position forces for high performance.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="central_reservation_image">
+              <img
+                src="./assets/images/nirvana.png"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================   START Central Reservation         =====================-->
+
+    <!--=================   START FAQ        =====================-->
+    <section class="faq">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading text-center">
+              <h2>
+                <span
+                  ><img
+                    src="./assets/images/conversation.png"
+                    class="img-fluid mr-1"
+                    alt=""
+                /></span>
+                General Inquiries
+              </h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has ?
+                          <i class="fas fa-caret-right"></i>
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has ?
+                          <i class="fas fa-caret-right"></i>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingTwo"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-link btn-block text-left collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has ?
+                          <i class="fas fa-caret-right"></i>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================   START FAQ        =====================-->
+
+    <!--=================   START PARTNERS        =====================-->
+    <section class="partnes inner_patrnes">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="partnes_item text-center">
+              <h4 class="mb-5">Supported by</h4>
+              <img
+                src="./assets/images/logo3.png"
+                class="img-fluid pr-2"
+                alt="image"
+              />
+              <img
+                src="./assets/images/logo2.png"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="partnes_item text-center">
+              <h4 class="mb-5">Approved by</h4>
+
+              <img
+                src="./assets/images/approved.png"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="partnes_item text-center">
+              <h4 class="mb-5">Official Show Daily</h4>
+              <img
+                src="./assets/images/approved2.png"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="partnes_slider_container">
+              <h2>Partners/Sponsors</h2>
+              <ul id="partnes_list">
+                <li>
+                  <img
+                    src="./assets/images/parnet3white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/parnet1white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/patnes5white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved2.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved-white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/parnet3white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/parnet1white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/patnes5white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved2.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved-white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================     END PARTNERS        =====================-->
+
+    <!--=================     START FOOTER        =====================-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 footer_logo">
+            <div class="footer_figure"></div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="footer_figure">
+              <div class="address">
+                <h2>Address</h2>
+                <p>P.O Box 6384, Amman 11118, Jordan</p>
+                <h2>
+                  Tel:
+                  <a href="tel:+962 6 562 7301" class="pl-2">
+                    +962 6 562 7301</a
+                  >
+                </h2>
+                <h2>
+                  Fax:
+                  <a href="tel:+962 6 562 7301" class="pl-2">
+                    +962 6 562 7301</a
+                  >
+                </h2>
+              </div>
+              <div class="email">
+                <h2>Email</h2>
+                <a href="mailto:info@sofexexpo.com"> info@sofexexpo.com</a>
+                <a href="mailto:sales@sofexexpo.com"> sales@sofexexpo.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="footer_figure mb-3">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="#">Quick Links</a></li>
+                <li><a href="#">Exhibitor Registration</a></li>
+                <li><a href="#">Sponsor Registration</a></li>
+                <li><a href="#">Visitor Registration</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--=================     END FOOTER          =====================-->
+
+    <!--=================  START JAVASCRIPT =================-->
+
+    <!--Start JQUERY-->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <!-- END JQUERY -->
+
+    <!--START BOOTSTRAP V.4 JS-->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- END BOOTSTRAP V.4 JS -->
+
+    <!--START Light Slider-->
+    <script src="./assets/js/lightslider.js"></script>
+    <!-- END Light Slider -->
+
+    <!--START MY JAVASCRIPT-->
+    <script src="./assets/js/custom.js"></script>
+    <!-- END MY JAVASCRIPT -->
+    <!--=================  END JAVASCRIPT  ==================-->
+  </body>
+</html>

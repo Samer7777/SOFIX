@@ -1,0 +1,10 @@
+@mixin rounded($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

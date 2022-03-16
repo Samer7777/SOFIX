@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--===========================Start All CSS======================================-->
+
+    <!--START FONT ICONS-->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!-- END FONT ICONS -->
+
+    <!--START BOOTSTRAP V.4-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- END BOOTSTRAP V.4 -->
+
+    <!-- START fancy box -->
+    <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css" />
+    <!-- END fancy box   -->
+
+    <!-- START LIGHT SLIDER -->
+    <link rel="stylesheet" href="./assets/css/lightslider.css" />
+    <!-- END LIGHT SLIDER   -->
+
+    <!--START MAIN CSS-->
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <!-- END MAIN CSS -->
+    <!--===========================End All CSS  ======================================-->
+    <title>Become a Media Partner</title>
+  </head>
+  <body>
+    <!--================= START HEADER ======================-->
+    <header class="header" id="header">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/logo.png" class="logo" alt="logo" />
+            </a>
+            <ul class="navbar-nav mx-auto" id="menuList">
+              <li class="nav-item">
+                <img
+                  src="./assets/images/logo.png"
+                  class="mobile_image"
+                  alt="logo"
+                />
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Exhibit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sponsrs.html">Sponsor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./mesoc.html">MESOC 2022</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./media-partner.html">Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href=""
+                  id="navbarDropdown1"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <a class="dropdown-item" href="./events.html">Events 1</a>
+                  <a class="dropdown-item" href="./events.html">Events 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./team.html">Meet the Team</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Quick Links
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            <div class="headerLogos">
+              <img src="./assets/images/logo3.png" class="logo" alt="logo2" />
+              <img src="./assets/images/logo2.png" class="logo" alt="logo3" />
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="box">
+        <div class="btn not-active" id="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <!--=================  END HEADER  ======================-->
+
+    <!--=================  START HERO  ======================-->
+    <section class="hero inner_page" id="here">
+      <div class="overlay"></div>
+      <video muted loop id="myVideo">
+        <source src="./assets/images/homeVedio.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="container-fluid z-2">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <div class="hero_text">
+              <h1>Become a Media Partner</h1>
+              <a href="mailto:sshweihat@sofexjordan.com" class="mainColorText"
+                >Or Contact sshweihat@sofexjordan.com</a
+              >
+            </div>
+            <!--not working here-->
+            <div class="cont_down">
+              <ul>
+                <li>
+                  <span id="days" class="number"></span
+                  ><span class="text_count">DAYS</span>
+                </li>
+                <li>
+                  <span id="hours" class="number"></span
+                  ><span class="text_count">HOURS</span>
+                </li>
+                <li>
+                  <span id="minutes" class="number"></span
+                  ><span class="text_count">MINUTES</span>
+                </li>
+                <li>
+                  <span id="seconds" class="number"></span
+                  ><span class="text_count">SECONDS</span>
+                </li>
+              </ul>
+              <h3>31 October - 3 November</h3>
+            </div>
+          </div>
+          <div class="hero_footer">
+            <button id="vedioPlay" class="btn playVedio" onclick="myFunction()">
+              <i class="fas fa-regular fa-play"></i>
+            </button>
+          </div>
+        </div>
+        <div class="social_icon">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--=================  END HERO    ======================-->
+
+    <!--=================   START PARTNERS        =====================-->
+    <section class="become_partner">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form class="my_form">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Company"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Country"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <input type="checkbox" id="check" />
+                  <label for="check" class="check_label">
+                    I have read and accept the
+                    <a href="#">Privacy policy </a> as well as the
+                    <a href="#">Cookie Policy</a>
+                  </label>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="submit"
+                    class="btn btn-primary submit_myform"
+                    value="Submit"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================   START PARTNERS        =====================-->
+
+    <!--=================   START PARTNERS        =====================-->
+    <section class="partnes inner_patrnes">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="partnes_item text-center">
+              <h4 class="mb-5">Supported by</h4>
+              <img
+                src="./assets/images/logo3.png"
+                class="img-fluid pr-2"
+                alt="image"
+              />
+              <img
+                src="./assets/images/logo2.png"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="partnes_item text-center">
+              <h4 class="mb-5">Approved by</h4>
+
+              <img
+                src="./assets/images/approved.png"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="partnes_item text-center">
+              <h4 class="mb-5">Official Show Daily</h4>
+              <img
+                src="./assets/images/approved2.png"
+                class="img-fluid"
+                alt="image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="partnes_slider_container">
+              <h2>Partners/Sponsors</h2>
+              <ul id="partnes_list">
+                <li>
+                  <img
+                    src="./assets/images/parnet3white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/parnet1white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/patnes5white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved2.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved-white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/parnet3white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/parnet1white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/patnes5white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved2.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved-white.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/images/approved.png"
+                    class="img-fluid"
+                    alt="image"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================     END PARTNERS        =====================-->
+
+    <!--=================     START FOOTER        =====================-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 footer_logo">
+            <div class="footer_figure"></div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="footer_figure">
+              <div class="address">
+                <h2>Address</h2>
+                <p>P.O Box 6384, Amman 11118, Jordan</p>
+                <h2>
+                  Tel:
+                  <a href="tel:+962 6 562 7301" class="pl-2">
+                    +962 6 562 7301</a
+                  >
+                </h2>
+                <h2>
+                  Fax:
+                  <a href="tel:+962 6 562 7301" class="pl-2">
+                    +962 6 562 7301</a
+                  >
+                </h2>
+              </div>
+              <div class="email">
+                <h2>Email</h2>
+                <a href="mailto:info@sofexexpo.com"> info@sofexexpo.com</a>
+                <a href="mailto:sales@sofexexpo.com"> sales@sofexexpo.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="footer_figure mb-3">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="#">Quick Links</a></li>
+                <li><a href="#">Exhibitor Registration</a></li>
+                <li><a href="#">Sponsor Registration</a></li>
+                <li><a href="#">Visitor Registration</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--=================     END FOOTER          =====================-->
+
+    <!--=================  START JAVASCRIPT =================-->
+
+    <!--Start JQUERY-->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <!-- END JQUERY -->
+
+    <!--START BOOTSTRAP V.4 JS-->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- END BOOTSTRAP V.4 JS -->
+
+    <!--START Light Slider-->
+    <script src="./assets/js/lightslider.js"></script>
+    <!-- END Light Slider -->
+
+    <!--START MY JAVASCRIPT-->
+    <script src="./assets/js/custom.js"></script>
+    <!-- END MY JAVASCRIPT -->
+    <!--=================  END JAVASCRIPT  ==================-->
+  </body>
+</html>
